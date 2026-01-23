@@ -31,8 +31,8 @@ textarea {
 body {
   margin: 16px;
   font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
-    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
@@ -106,6 +106,7 @@ body {
   justify-content: flex-start;
   flex-direction: column;
   gap: 8px;
+  margin-top: 25px;
 }
 
 .form-label {
@@ -148,6 +149,9 @@ body {
 }
 
 /**task-5**/
+.widget {
+  margin-top: 25px;
+}
 
 .text-widget {
   font-weight: 400;
@@ -175,4 +179,34 @@ body {
 .change-color:hover,
 .change-color:focus {
   background: #6c8cff;
+}
+
+.btn-new {
+  border: none;
+  border-radius: 2px;
+  text-decoration: none;
+  color: white;
+  background: #0b63f6;
+  box-shadow: 0 5px 0 #003cc5;
+}
+
+.btn-new:hover {
+  background: #003cc5;
+  box-shadow: none;
+  position: relative;
+  top: 5px;
+}
+
+.nav {
+  max-width: 80px;
+  border-radius: 2px;
+  color: white;
+  transition: 0.2s linear;
+  background: #0b63f6;
+}
+
+.nav:hover {
+  box-shadow:
+    0 0 0 2px white,
+    0 0 0 4px #3c82f8;
 }
